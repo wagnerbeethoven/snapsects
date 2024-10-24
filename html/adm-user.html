@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="http://snapsects.com/html/css/main.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://snapsects.com/html/img/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://snapsects.com/html/img/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://snapsects.com/html/img/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://snapsects.com/html/img/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://snapsects.com/html/img/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://snapsects.com/html/img/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://snapsects.com/html/img/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://snapsects.com/html/img/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="http://snapsects.com/html/img/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="http://snapsects.com/html/img/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://snapsects.com/html/img/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://snapsects.com/html/img/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="http://snapsects.com/html/img/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="SnapSects"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="http://snapsects.com/html/img/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="http://snapsects.com/html/img/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="http://snapsects.com/html/img/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="http://snapsects.com/html/img/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="http://snapsects.com/html/img/favicon/mstile-310x310.png" />
+
+    <title>Administrar usuários - SnapSects</title>
+</head>
+
+<body class="body-adm-user">
+    <header class="site-header">
+  <div class="container">
+    <a class="site-logo" href="http://snapsects.com/html">
+      <img src="http://snapsects.com/html/img/logo/site-logo.svg" alt="Áudio-descrição do logotipo do SnapSects: em um triângulo cinza, com borda amarela, há uma figura estilizada de um artrópode, cuja cabeça é formada por um semicírculo branco, com dois pequenos círculos cinza, os quais representam olhos compostos. O tórax da figura é formado por uma gota branca, de cujos lados partem, um de cada lado, semicírculos vermelhos, representando um par de asas, que se estendem em direção ao abdômen, e dão à figura a aparência de uma joaninha. O abdômen é formado por um círculo branco, em cuja porção final há um pequeno triângulo sombreado, o qual lembra um ferrão, como em uma abelha.  Margeando a parte esquerda do tórax e a parte direita do abdômen, uma linha preta forma a letra S. Abaixo da figura do artrópode, um pequeno retângulo amarelo dá ao triângulo o formato de um A maiúsculo. Sob o triângulo:  SnapSects. O primeiro e segundo S de SnapSects são maiúsculos. ">
+      <h1 class="">
+        SnapSects
+      </h1>
+    </a>
+
+    <div class="site-lang">
+
+      <select id="language" onchange="javascript:window.location='index.php?lang='+this.value;">
+        <option selected disabled>Selecione o idioma</option>
+        <option value="it-it">Italiano</option>
+        <option value="fr-fr">Francês</option>
+        <option value="en-us">English</option>
+        <option value="es-es">Spanish</option>
+        <option value="pt-br">Português</option>
+      </select>
+    </div>
+  </div>
+</header>
+    <nav class="site-menu">
+    <div class="container">
+        <button type="button" title="Menu principal" class="navbar-toggler" data-toggle="collapse" data-target="#site-menu" aria-controls="site-menu"
+            aria-expanded="false" aria-label="Exibir/Ocultar Menu principal">
+            <i class="fas fa-bars"></i> <span>Menu</span>
+        </button>
+        <div class="collapse" id="site-menu">
+            <div class="site-lang">
+                <select id="language" onchange="javascript:window.location='index.php?lang='+this.value;">
+                    <option selected disabled>Selecione o idioma</option>
+                    <option value="it-it">Italiano</option>
+                    <option value="fr-fr">Francês</option>
+                    <option value="en-us">English</option>
+                    <option value="es-es">Spanish</option>
+                    <option value="pt-br">Português</option>
+                </select>
+            </div>
+            <ul>
+                <li class=""><a href="http://snapsects.com/html">Página inicial</a></li>
+                <li class=""><a href="http://snapsects.com/html/search.html">Procurar artrópode</a></li>
+                <li class=""><a href="http://snapsects.com/html/login.html">Conectar</a></li>
+                <li class=""><a href="http://snapsects.com/html/about.html">Sobre</a></li>
+                <li class=""><a href="http://snapsects.com/html/faq.html">Perguntas frequentes</a></li>
+                <li class=""><a href="http://snapsects.com/html/disclaimer.html">Declaração de isenção</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <nav class="new-insect">
+    <div class="container">
+        <button type="button" title="Adicionar artropode" data-toggle="collapse" data-target="#new-insect" aria-controls="new-insect"
+            aria-expanded="false" aria-label="Exibir/Ocultar Menu para adicionar artropode">
+            <i class="fas fa-spider"></i> <span>Adicionar nov inseto</span>
+        </button>
+        <div class="collapse" id="new-insect">
+
+            <ul>
+                <li class=""><a href="http://snapsects.com/html/authors.html">Descritores e Colaboradores</a></li>
+                <li class=""><a href="http://snapsects.com/html/identify-your-arthropod.html">Classificação e Taxonômia</a></li>
+                <li class=""><a href="http://snapsects.com/html/describe-your-arthropod.html">Descrição Científica Parcial</a></li>
+                <li class=""><a href="http://snapsects.com/html/collecting-method.html">Dados de coleta</a></li>
+                <li class=""><a href="http://snapsects.com/html/proemial-notes.html">Notas proêmias</a></li>
+                <li class=""><a href="http://snapsects.com/html/audio-description.html">Áudio-descrição</a></li>
+                <li class=""><a href="http://snapsects.com/html/mediation-text.html">Texto de mediação</a></li>
+                <li class=""><a href="http://snapsects.com/html/bibliography.html">Bibliografia</a></li>
+                <li class=""><a href="http://snapsects.com/html/picture.html">Fotografia</a></li>
+            </ul>
+
+
+        </div>
+        <hr>
+    </div>
+</nav>
+    <nav class="adm-school">
+    <div class="container">
+        <ul>
+            <li class=""><a href="http://snapsects.com/html/school.html">Escola</a></li>
+            <li class=""><a href="http://snapsects.com/html/adm-user.html">Admnistrar
+                    usuários</a></li>
+            <li class=""><a href="http://snapsects.com/html/adm-picture.html">Administrar
+                    imagens</a></li>
+        </ul>
+
+
+    </div>
+</nav>
+
+    <!-- <nav class="breadcrumbs">
+    
+    <ol>
+        <li>Você está em:</li>
+        <li> <a href="/">Página inicial</a>
+        </li> 
+        <li>
+            
+            Adm user
+            
+            
+        </li>
+    </ol>
+</nav> -->
+
+<main>
+    <article>
+        <div class="hgroup">
+            <h2 id="adm-user">Administrar usuários</h2>
+            <h3></h3>
+        </div>
+        <div class="content page-adm-user"> <div class="table-responsive">
+
+    <table>
+        <caption>Usuários cadastrados</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+
+                <th scope="col">Função</th>
+                <th scope="col">Nome</th>
+                <th scope="col"><i class="fas fa-at"></i></th>
+                <th scope="col"><i class="fas fa-link"></i></th>
+                <th scope="col">Observações</th>
+                <th scope="col" colspan="3" class="text-center">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <th scope="row">1</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Luiz Eduardo</td>
+                <td><a title="Clique para enviar email para luiz@domvirt.com.br" href="mailto:luiz@domvirt.com.br"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Luiz Eduardo"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Luiz Eduardo"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Luiz Eduardo"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><span class="sr-only">Usuário</span><i title="Usuário" class="fas fa-user"></i></td>
+                <td>Josineide</td>
+                <td><a title="Clique para enviar email para jcants@hotmail.com" href="mailto:jcants@hotmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Josineide"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Josineide"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Josineide"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Francisco Lima</td>
+                <td><a title="Clique para enviar email para limafj.us@gmail.com" href="mailto:limafj.us@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Francisco Lima"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Francisco Lima"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Francisco Lima"><i class="fas fa-key"></i></button></td>
+            <tr>
+                <th scope="row">4</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Thais</td>
+                <td><a title="Clique para enviar email para slima_thais@hotmail.com" href="mailto:slima_thais@hotmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Thais Lima"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Thais Lima"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Thais Lima"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Luiz Eduardo</td>
+                <td><a title="Clique para enviar email para luiz_eduardo@domvirt.com.br" href="mailto:luiz_eduardo@domvirt.com.br"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Luiz Eduardo"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Luiz Eduardo"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Luiz Eduardo"><i class="fas fa-key"></i></button></td>
+            <tr>
+                <th scope="row">6</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Francisco Lima</td>
+                <td><a title="Clique para enviar email para limafj.br@gmail.com" href="mailto:limafj.br@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td><a href="http://audiodescriptionworldwide.com" target="_blank" title="O link irá abrir uma nova janela"><i
+                            class="fas fa-link"></i></a></td>
+
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Francisco Lima"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Francisco Lima"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Francisco Lima"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td><span class="sr-only">Usuário</span><i title="Usuário" class="fas fa-user"></i></td>
+                <td>Sarah Studer</td>
+                <td><a title="Clique para enviar email para svstuder@gmail.com" href="mailto:svstuder@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Sarah Studer"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Sarah Studer"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Sarah Studer"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td><span class="sr-only">Usuário</span><i title="Usuário" class="fas fa-user"></i></td>
+                <td>Sean Brady</td>
+                <td><a title="Clique para enviar email para bradys@si.edu" href="mailto:bradys@si.edu"><i class="fas fa-at"></i></a></td>
+                <td><a href="https://entomology.si.edu/StaffPages/BradyS.htm" target="_blank" title="O link irá abrir uma nova janela"><i
+                            class="fas fa-link"></i></a></td>
+
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Sean Brady"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Sean Brady"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Sean Brady"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Wagner Beethoven</td>
+                <td><a title="Clique para enviar email para wagnerbeethoven@gmail.com" href="mailto:wagnerbeethoven@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td><a href="http://sumo.pe" target="_blank" title="O link irá abrir uma nova janela"><i class="fas fa-link"></i></a></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Wagner Beethoven"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Wagner Beethoven"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Wagner Beethoven"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Luiz Eduardo</td>
+                <td><a title="Clique para enviar email para leduardop2@gmail.com" href="mailto:leduardop2@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Luiz Eduardo"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Luiz Eduardo"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Luiz Eduardo"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Rosangela Lima</td>
+                <td><a title="Clique para enviar email para rose.ferreira.lima@gmail.com" href="mailto:rose.ferreira.lima@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar  Rosangela Lima"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover  Rosangela Lima"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha  Rosangela Lima"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td><span class="sr-only">Administrador</span><i title="Administrador" class="fas fa-cog"></i></td>
+                <td>Kawan Xavier</td>
+                <td><a title="Clique para enviar email para profdokaka@gmail.com" href="mailto:profdokaka@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td><a href="http://kakaoficial.com" target="_blank" title="O link irá abrir uma nova janela"><i class="fas fa-link"></i></a></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Kawan Xavier"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Kawan Xavier"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Kawan Xavier"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Milton Carvalho</td>
+                <td><a title="Clique para enviar email para miltoncarvalho81@gmail.com" href="mailto:miltoncarvalho81@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+
+                <td><button type="button" name="editar" title="Editar Milton Carvalho"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Milton Carvalho"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Milton Carvalho"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Roberta</td>
+                <td><a title="Clique para enviar email para carmape@gmail.com" href="mailto:carmape@gmail.com"><i class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Roberta"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Roberta"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Roberta"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Rosangela</td>
+                <td><a title="Clique para enviar email para rosangelalgera@gmail.com" href="mailto:rosangelalgera@gmail.com"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Rosangela Maria"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Rosangela Maria"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Rosangela Maria"><i class="fas fa-key"></i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <td><span class="sr-only">Professor</span><i class="fas fa-graduation-cap" title="Professor"></i></td>
+                <td>Edson</td>
+                <td><a title="Clique para enviar email para edsonmello@ig.com.br" href="mailto:edsonmello@ig.com.br"><i
+                            class="fas fa-at"></i></a></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" name="editar" title="Editar Edson Lima"><i class="fas fa-user-edit"></i></button></td>
+                <td><button type="button" name="remover" title="Remover Edson Lima"><i class="fas fa-user-slash"></i></button></td>
+                <td><button type="button" name="sendpass" title="Enviar senha Edson Lima"><i class="fas fa-key"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div> </div>
+    </article>
+</main>
+<script src="http://snapsects.com/html/js/anchor.min.js"></script>
+<script>
+    anchors.options = {
+  placement: 'left',
+  visible: 'always',
+  icon: '#'
+};
+    anchors.add('.hgroup h2');
+</script>
+
+
+    <footer class="site-footer" id="site-footer">
+    <a href="http://snapsects.com/html/copyright.html">
+        Licença BSD de 3 Claúsulas. 2017-2019 &copy; Todos os direitos reservados - Francisco J. Lima
+    </a>
+</footer>
+<script src="http://snapsects.com/html/js/fontawesome-v5.7.2.js"></script>
+<script src="http://snapsects.com/html/js/jquery-3.3.1.slim.min.js"></script>
+<script src="http://snapsects.com/html/js/popper.min.js"></script>
+<script src="http://snapsects.com/html/js/bootstrap.min.js"></script>
+<script src="http://snapsects.com/html/js/scripts.js"></script>
+
+</body>
+
+</html>
